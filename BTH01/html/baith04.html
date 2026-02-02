@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+<fieldset>
+    <legend><b>Basic Infor</b></legend>
+    <table>
+        <tr>
+            <td><label>Employee ID</label></td>
+            <td><input type="text" value="9"></td>
+        </tr>
+        <tr>
+            <td><label>Last Name</label></td>
+            <td><input type="text" value="Dodsworth"></td>
+        </tr>
+        <tr>
+            <td><label>First Name</label></td>
+            <td><input type="text" value="Anne"></td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="XXX"> XXX
+                <input type="radio" name="gender" value="ZZZ" checked> ZZZ
+            </td>
+        </tr>
+        <tr>
+            <td><label>Title</label></td>
+            <td><input type="text" value="Sales Representative"></td>
+        </tr>
+        <tr>
+            <td><label>Suffix</label></td>
+            <td><input type="text" value="Ms."></td>
+        </tr>
+        <tr>
+            <td><label>Birth Date</label></td>
+            <td><input type="date" value="1969-07-02"></td>
+        </tr>
+        <tr>
+            <td><label>Hire Date</label></td>
+            <td><input type="date" value="1994-11-15"></td>
+        </tr>
+        <tr>
+            <td><label>SSN # (if applicable)</label></td>
+            <td><input type="text" value=""></td>
+        </tr>
+        <tr>
+            <td>Reports To</td>
+            <td>
+                <select>
+                    <option>Buchanan</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<br>
+<fieldset>
+    <legend><b>Contact Info</b></legend>
+    <table>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" value="name@example.com"></td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><input type="text" value="7 Houndstooth Rd."></td>
+        </tr>
+        <tr>
+            <td><label>City</label></td>
+            <td><input type="text" value="London"></td>
+        </tr>
+        <tr>
+            <td><label>Region</label></td>
+            <td><input type="text" value=""></td>
+        </tr>
+        <tr>
+            <td><label>Postal Code</label></td>
+            <td><input type="text" value="WG2 7LT"></td>
+        </tr>
+        <tr>
+            <td><label>Country</label></td>
+            <td>
+                <select>
+                    <option>Russian Federation</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>US Home Phone</label></td>
+            <td><input type="text" value="(234) 234-2342"></td>
+        </tr>
+        
+        <tr>
+            <td><label>Photo</label></td>
+            <td><input type="text" value="EmpID9.bmp"></td>
+        </tr>
+    </table>
+</fieldset>
+<br>
+<fieldset>
+    <legend><b>Optional Info</b></legend>
+    <table>
+        <tr>
+            <td><label>Notes</label></td>
+            <td><textarea rows="4" cols="40">Anne has a BA degree in English from St. Lawrence College.She is fluent in French and German.ZZZ </textarea></td>
+        </tr>
+        <tr>
+            <td><label>Preferred Shift</label></td>
+            <td><input type="checkbox">Regular</td>
+            <td><input type="checkbox" checked>Gravy Yard</td>
+        </tr>
+        <tr>
+            <td><label>Active?</label></td>
+            <td><input type="checkbox" value="" checked></td>
+        </tr>
+        <table>
+            <tr>
+                <td><label for="question">Are you human?</label></td>
+                <td><input type="text" name="question" id="question" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Click to change</td>
+            </tr>
+        </table>
+    </table>
+</fieldset>
+<br>
+<button type="submit">Submit</button>
+<button type="button">Cancel</button>
+</form>
+</body>
+</html>
