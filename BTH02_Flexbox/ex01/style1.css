@@ -1,0 +1,55 @@
+body{
+    background: white;
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 800px;
+    margin: 50px auto;
+    background: #f0f0f0;
+    padding: 30px;
+    border: 1px solid #090909;
+}
+h2{
+    margin-bottom: 20px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row{
+    display: flex;
+    gap: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+textarea{
+    height: 200px;
+    resize: none;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover{
+    background: darkblue;
+}
+.bottom p{
+    font-size: 13px;
+    color: grey;
+}
