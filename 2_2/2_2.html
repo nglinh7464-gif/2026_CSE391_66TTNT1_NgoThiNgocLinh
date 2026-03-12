@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng</title>
+    <link rel="stylesheet" href="2_2.css">
+</head>
+<body>
+    <div class="container">
+        <form id="orderForm">
+            <h2>Đơn Đặt Hàng</h2>
+
+            <div class="form-control">
+                <label>Sản phẩm</label>
+                <select id="product">
+                    <option value="">-- Chọn sản phẩm --</option>
+                    <option value="Laptop">Laptop (20.000.000đ)</option>
+                    <option value="Chuột">Chuột (500.000đ)</option>
+                    <option value="Bàn phím">Bàn phím (1.200.000đ)</option>
+                </select>
+                <span class="error" id="productError"></span>
+            </div>
+
+            <div class="form-control">
+                <label>Số lượng (1-99)</label>
+                <input type="number" id="quantity" value="1">
+                <span class="error" id="quantityError"></span>
+            </div>
+
+            <div class="form-control">
+                <label>Ngày giao hàng</label>
+                <input type="date" id="deliveryDate">
+                <span class="error" id="deliveryDateError"></span>
+            </div>
+
+            <div class="form-control">
+                <label>Địa chỉ giao</label>
+                <input type="text" id="address">
+                <span class="error" id="addressError"></span>
+            </div>
+
+            <div class="form-control">
+                <label>Ghi chú (<span id="charCount">0/200</span>)</label>
+                <textarea id="note" rows="3"></textarea>
+                <span class="error" id="noteError"></span>
+            </div>
+
+            <div class="form-control">
+                <label>Thanh toán:</label>
+                <input type="radio" name="payment" value="COD"> COD
+                <input type="radio" name="payment" value="Chuyển khoản"> Chuyển khoản
+                <span class="error" id="paymentError"></span>
+            </div>
+
+            <h3 id="totalDisplay">Tổng tiền: 0đ</h3>
+            <button type="submit">Đặt hàng ngay</button>
+        </form>
+
+        <div id="confirmDialog" style="display:none; border: 2px solid #3498db; padding: 20px; border-radius: 8px;">
+            <h3>Xác nhận đơn hàng</h3>
+            <div id="summary"></div>
+            <br>
+            <button id="btnFinalConfirm" style="background: green;">Xác nhận</button>
+            <button id="btnCancel" style="background: gray;">Hủy</button>
+        </div>
+
+        <div id="finalSuccess" style="display:none; text-align:center; color: green;">
+            <h2>Đặt hàng thành công!</h2>
+        </div>
+    </div>
+    <script src="2_2.js"></script>
+</body>
+</html>
