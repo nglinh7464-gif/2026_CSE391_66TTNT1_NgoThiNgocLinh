@@ -1,0 +1,90 @@
+#hero {
+  height: 800px;
+  background-image: url("images/ocean.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 5px solid rgb(250, 142, 207);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  width: 600px;
+}
+
+#hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#hero-content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#hero-content a {
+  background-color: yellow;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#highlights {
+  padding: 60px;
+  background-color: rgb(227, 255, 253);
+  text-align: center;
+  border: 5px solid rgb(249, 123, 188);
+}
+
+#highlights ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+#highlights li {
+  flex: 1;          
+}
+
+#highlights img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#highlights h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.destination img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.destination p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.destination strong {
+  color: rgb(0, 160, 117);
+}
